@@ -1,0 +1,116 @@
+% This text is proprietary.
+% It's a part of presentation made by myself.
+% It may not used commercial.
+% Sep. 2014
+% Author: Neo Cui
+% Institute: Ocean University of China
+% E-mail: cuiluji@gmail.com
+
+%%-------------------- Beamer theme style----------------
+%beamerthemeAnnArbor, JuanLesPins, Antibes, Berkeley
+%Marburg, Boadilla, CambridgeUS, Rochester, default
+
+\documentclass[mathserif,table]{beamer}	%for XeTex
+\usepackage{fontspec,xunicode,xltxtra}
+\usepackage{setspace}
+%%------------------------ThemeColorFont------------------------
+%% Presentation Themes
+\usetheme{AnnArbor}
+%% Inner Themes
+\useinnertheme{rounded}
+%% Outer Themes
+%\useoutertheme{shadow}
+%% Color Themes 
+% \usecolortheme[<options>]{<name list>}
+%% Font Themes
+% \usefonttheme[<options>]{<name>}
+\usepackage{neofontcfg}
+%%------------------Figure------------------
+\graphicspath{{figures/}}
+
+%%----------------FrontPage---------------
+\title[Summary]{\emph{\textbf{Schedule Report}}}  
+\author[Neo Cui]{\kai{汇报人}~~\textcolor{olive}{\kai{崔禄吉}}}
+\institute[Ocean University of China]{\small\textcolor{violet}{\song{中国海洋大学~~信息科学与工程学院}}}
+\date{\today} 
+
+\begin{document}
+%%----------------TitlePage-----------
+\frame{\titlepage} 
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+  \frametitle{Contents}
+  \tableofcontents[currentsection]
+  \end{frame}
+}
+
+%%---------------ChapterOne----------------
+%\section for starting a new chapter.
+%\frame for starting a new page.
+\section{Original Plan}
+\frame{\frametitle{Original Plan}
+\includegraphics[scale=0.4]{advplan}
+
+\begin{block}{\emph{Plan 1}}
+Plan A is something you want to do. \\
+I want to test how many words can one block contains.\\
+\ldots
+\end{block}
+\pause
+
+\begin{exampleblock}{\emph{Plan 2}}
+Plan B is something you want to do.
+\end{exampleblock}
+\pause
+
+\begin{alertblock}{\emph{Plan 3}}
+Plan C is something you want to do.
+\end{alertblock}
+\pause
+}
+
+%{itemise} is unnumbered lists.
+%{enumerate} isnumbered lists.
+
+%%---------------ChapterTwo-------------
+\section{Conclusion} 
+\frame{\frametitle{\small{Rate of Progress\framebox[1cm][l]{100$\%$}}} 
+\includegraphics[scale=0.4]{work}
+\begin{itemize}
+\item<1-> \textsf{\emph{Accomplishment $1$}}
+	\begin{itemize}
+	\item<2-> \texttt{I have finished Plan A.}
+	\item<2-> \texttt{I have completed Plan A, you know.}
+	\end{itemize}
+\item<3-> \textsf{\emph{Accomplishment $2$}}
+	\begin{itemize}
+	\item<4-> \texttt{I have finished Plan B.}
+	\item<4-> \texttt{I feel very happy, because I have achieved something meaningful.}
+	\end{itemize}
+\end{itemize}
+}
+
+%%---------------ChapterThree-------------
+\section{Plan in Next Two Weeks}
+\frame{\frametitle{Goal}
+\includegraphics[scale=0.4]{plan}
+\begin{spacing}{2}
+\begin{enumerate}[<+-| alert@+>]
+	\item I want to do important things. \\
+	\item I hope I can make progress.
+\end{enumerate}
+\end{spacing}
+}
+
+
+%%---------------Acknowledgement-------------
+\frame{\frametitle{Acknowledgement}
+\begin{spacing}{2}
+\begin{center}
+\Huge{Hello! UWB Lab!} \\
+\end{center}
+\end{spacing}
+}
+
+\end{document}

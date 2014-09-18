@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{Original Plan}{2}{0}{1}
+\beamer@sectionintoc {2}{Conclusion}{7}{0}{2}
+\beamer@sectionintoc {3}{Plan in Next Two Weeks}{12}{0}{3}
